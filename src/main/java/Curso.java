@@ -67,5 +67,20 @@ public class Curso {
             System.out.println(alumno.toString());
         }
     }
+    public boolean modificarAlumno(String rut, String nombre){
+        boolean condicion = false;
+        for(Alumno alumno: this.alumnos){
+            if(alumno.getRut().equals(rut)){
+                alumno.setNombre(nombre);
+                condicion = true;
+                break;
+            }
+        }
+        return condicion;
+    }
+    public Alumno modificarAlumno(Alumno alumno, String nombre){
+        alumno.setNombre(nombre);
+        return alumno;
+    }
 
 }

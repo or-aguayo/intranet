@@ -27,6 +27,14 @@ public class Alumno {
         return nMatricula;
     }
 
+    public void setNombre(String nombre) {
+        this.nombre = nombre;
+    }
+
+    public void setApellido(String apellido) {
+        this.apellido = apellido;
+    }
+
     @Override
     public String toString(){
         return "Nombre: "+this.nombre+" "+this.apellido+", rut: "+this.rut+", número de matricula "+this.nMatricula;
